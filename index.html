@@ -2,65 +2,17 @@
 <html lang="en">
 
     <head>
-        <title>CentauriNE</title>
+
+        <title>CentauriNET</title>
         <link rel="icon" type="image/x-icon" href="./public/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
-    </head>
+        <link href="./home.css" rel="stylesheet">
+        <script type="text/javascript" src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"></script>
 
-<body>
-  <div>
-    <script type="text/javascript" src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"></script>
-    <link href="./home.css" rel="stylesheet" />
-    <div class="home-container">
-      <section class="home-hero">
-        <div class="home-menu">
-          <div id="mobile-menu" class="home-mobile-navigation">
-            <img alt="pastedImage" src="public/centauri-200h.jpg" width="150px" />
-            <div class="home-links">
-              <span class="Link">Features</span>
-              <span class="Link">Our Work</span>
-              <span class="Link">Team</span>
-              <span class="Link">Contact Us</span>
-            </div>
-            <div id="close-mobile-menu" class="home-close-mobile-menu">
-              <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
-                <path
-                  d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
-                </path>
-              </svg>
-            </div>
-          </div>
-          <div class="home-desktop-navigation">
-            <nav class="home-centered">
-              <div class="home-left">
-                <img alt="image" src="public/centauri-200h.jpg" class="home-logo" />
-                <div class="home-links1">
-                  <span class="Link">Features</span>
-                  <span class="Link">Our Work</span>
-                  <span class="Link">Team</span>
-                  <span class="Link">Contact Us</span>
-                </div>
-              </div>
-              <div class="home-right">
-                <span class="home-sign-up Link">Sign Up</span>
-                <div class="home-get-started">
-                  <span class="home-text007">Sign In</span>
-                </div>
-                <div id="open-mobile-menu" class="home-burger-menu">
-                  <img alt="pastedImage" src="public/pastedimage-yxbd.svg" class="home-mobile-menu-button" />
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div>
-          <dangerous-html html="<script>
-            /*
-            Mobile menu - Code Embed
-            */
+        <script>
 
             // Mobile menu
             const mobileMenu = document.querySelector('#mobile-menu')
@@ -78,61 +30,111 @@
             closeButton.addEventListener('click', function() {
                 mobileMenu.style.transform = 'translateX(100%)'
             })
-            </script>">
-          </dangerous-html>
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="home-container">
+
+            <section class="home-hero">
+
+                <div class="home-menu">
+                    <div id="mobile-menu" class="home-mobile-navigation"> <!--mobile view-->
+                        <img alt="pastedImage" src="public/centauri-200h.jpg" width="150px">
+                        <div class="home-links">
+                            <span class="Link">Features</span>
+                            <span class="Link">Our Work</span>
+                            <span class="Link">Team</span>
+                            <span class="Link">Contact Us</span>
+                        </div>
+                        <div id="close-mobile-menu" class="home-close-mobile-menu">
+                            <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                                <path
+                                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="home-desktop-navigation"> <!--desktop view-->
+                        <nav class="home-centered">
+                            <div class="home-left">
+                                <img alt="image" src="public/centauri-200h.jpg" class="home-logo">
+                                <div class="home-links1">
+                                    <span class="Link">Features</span>
+                                    <span class="Link">Our Work</span>
+                                    <span class="Link">Team</span>
+                                    <span class="Link">Contact Us</span>
+                                </div>
+                            </div>
+                            <div class="home-right">
+                                <span class="home-sign-up Link">Sign Up</span>
+                                <div class="home-get-started">
+                                    <span class="home-text007">Sign In</span>
+                                </div>
+                                <div id="open-mobile-menu" class="home-burger-menu">
+                                    <img alt="pastedImage" src="public/pastedimage-yxbd.svg" class="home-mobile-menu-button">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <header class="home-header">
+                    <h1 class="home-text008">Welcome to CentauriNET</h1>
+                    <p class="home-text009">We are a young Startup that aims to create something new.</p>
+                    <div class="home-get-started1">
+                        <span class="home-text010">Get started</span>
+                    </div>
+                </header>
+
+                <div class="home-dashboard-preview">
+                    <div class="home-outline">
+                        <img alt="pastedImage" src="public/image-1000h.png" loading="lazy" class="home-image">
+                    </div>
+                </div>
+
+            </section>
+    
+            <section class="home-features" style="background-color: #eff0f2 !important">
+
+                <div class="home-title">
+                    <span class="home-text011">We want to do something amazing</span>
+                    <span class="home-text012">We have innovative ideas and we can't wait to make them real.</span>
+                </div>
+    
+                <div class="home-cards mb-4">
+                    <div class="home-container1">
+                        <div class="card">
+                            <img alt="pastedImage" src="public/pastedimage-l6p-200h.png" class="home-icon02">
+                            <span class="home-text013">Search Engine</span>
+                            <span class="home-text014">Search whatever you are thinking about, safely</span>
+                        </div>
+                        <div class="home-publish card">
+                            <img alt="pastedImage" src="public/pastedimage-mimg-200h.png" class="home-icon03">
+                            <span class="home-text015">Social Network</span>
+                            <span class="home-text016">Show the entire world what you are capable of</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer class="home-footer" style="color: #fff !important">
+            
+                <div class="home-bottom">
+                    <img alt="pastedImage" src="public/logo.jpeg" width="80px" class="mb-4">
+                    <span>Copyright © Centauri - 2023</span>
+                </div>
+    
+            </footer>
+
         </div>
-        <header class="home-header">
-          <h1 class="home-text008">Welcome to CentauriNET</h1>
-          <p class="home-text009">
-            We are a young Startup that aims to create something new.
-          </p>
-          <div class="home-get-started1">
-            <span class="home-text010">Get started</span>
-          </div>
-        </header>
-        <div class="home-dashboard-preview">
-          <div class="home-outline">
-            <img alt="pastedImage" src="public/image-1000h.png" loading="lazy" class="home-image" />
-          </div>
-        </div>
-      </section>
-      <section class="home-features" style="background-color: #eff0f2 !important">
-        <div class="home-title">
-          <span class="home-text011">We want to do something amazing</span>
-          <span class="home-text012">
-            We have innovative ideas and we can't wait to make them real.
-          </span>
-        </div>
-        <div class="home-cards mb-4">
-          <div class="home-container1">
-            <div class="card">
-              <img alt="pastedImage" src="public/pastedimage-l6p-200h.png" class="home-icon02" />
-              <span class="home-text013">Search Engine</span>
-              <span class="home-text014">
-                Search whatever you are thinking about, safely
-              </span>
-            </div>
-            <div class="home-publish card">
-              <img alt="pastedImage" src="public/pastedimage-mimg-200h.png" class="home-icon03" />
-              <span class="home-text015">Social Network</span>
-              <span class="home-text016">
-                Show the entire world what you are capable of
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="home-footer" style="color: #fff !important">
-        <div class="home-bottom">
-          <img alt="pastedImage" src="public/logo.jpeg" width="80px" class="mb-4" />
-          <span>Copyright © Centauri - 2023</span>
-        </div>
-      </footer>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </body>
 
 </html>
