@@ -1,1 +1,2 @@
 # centauri
+main page
